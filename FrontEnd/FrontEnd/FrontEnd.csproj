@@ -67,6 +67,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CodeTheWay.html" />
+    <Content Include="HeroesForHealthcare.html" />
+    <Content Include="images\Code Review.jpg" />
+    <Content Include="images\CodeTheWay Logo.png" />
+    <Content Include="images\Definition of done.jpg" />
+    <Content Include="images\Hallway.jpg" />
+    <Content Include="images\Heroes Logo.png" />
+    <Content Include="images\Heroes2.png" />
+    <Content Include="images\Heroes3.png" />
+    <Content Include="images\LifeNavigators1.jpg" />
+    <Content Include="images\LifeNavigators2.jpg" />
+    <Content Include="images\Project Management.jpg" />
+    <Content Include="images\Sprint review-code demo.jpg" />
+    <Content Include="images\Stand Up.jpg" />
+    <Content Include="images\Team Learning %281%29.jpg" />
+    <Content Include="images\Team Learning.jpg" />
+    <Content Include="images\Team Programming.jpg" />
+    <Content Include="images\To do list.jpg" />
+    <Content Include="images\Update.jpg" />
+    <Content Include="images\Work Time.jpg" />
+    <Content Include="LifeNavigators.html" />
+    <Content Include="Media.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +103,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
