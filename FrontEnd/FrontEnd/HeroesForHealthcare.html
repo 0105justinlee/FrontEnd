@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="StyleSheet.css" />
     <title>Heroes For Healthcare</title>
 </head>
-<body>
+<body onload="showHide()">
     <img src="images/Heroes Logo.png" height="20%" width="20%" />
     <p class="majorHeading">Heroes for Healthcare</p>
     <img src="images/Heroes2.png" height="20%" width="20%" align="left" />
@@ -15,11 +15,37 @@
     <p align="right" class="minorHeading">Unemployed Veterans</p>
     <p align="right" class="bodyText">Many U.S. Veterans find it hard to secure a job in healthcare when they’re ready to work in the civilian world. Even after showing dedication, strong work ethic, and leadership while serving our country, many military members can’t find jobs.</p>
     <ul align="right">
-        <li class="bodyText">453,000 unemployed veterans in 2016</li>
-        <li class="bodyText">Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</li>
+        <li class="bodyText">
+            <div class="tooltip">
+                Amount of unemploeyd veterans
+                <div class="tooltiptext">453,000 in 2016</div>
+            </div>
+        </li>
+        <li class="bodyText">
+            <div class="tooltip">
+                Sept. 11 Before vs After
+                <div class="tooltiptext">Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans</div>
+            </div>
+        </li>
     </ul>
-    <p class="minorHeading">Message from the President</p>
-    <p class="bodyText">I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian. We need supporters like you to help our mission so our service members can get a job and better their lives. After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
+    <button onclick="showHide()" class="showHideButton">Show Message from the President</button>
+    <div id="vision">
+        <p class="minorHeading">Message from the President</p>
+        <p class="bodyText">I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian. We need supporters like you to help our mission so our service members can get a job and better their lives. After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
+    </div>
+    <br>
+    <br>
     <a href="CodeTheWay.html" class="navigationLink">Home</a>
 </body>
 </html>
+<script>
+    function showHide() {
+        var x = document.getElementById("vision");
+        if (x.style.display !== "none") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
